@@ -1,7 +1,6 @@
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/Va03iH
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-DROP TABLE departments
 
 CREATE TABLE "Departments" (
     "dept_no" VARCHAR   NOT NULL,
@@ -11,21 +10,19 @@ CREATE TABLE "Departments" (
      )
 );
 
-DROP TABLE Dept_Employees
 
 CREATE TABLE "Dept_Employees" (
     "emp_no" VARCHAR   NOT NULL,
     "dept_no" VARCHAR   NOT NULL
 );
 
-DROP TABLE Dept_manager
+
 
 CREATE TABLE "Dept_manager" (
     "dept_no" VARCHAR   NOT NULL,
     "emp_no" VARCHAR   NOT NULL
 );
 
-DROP TABLE Employees
 
 CREATE TABLE "Employees" (
     "emp_no" VARCHAR   NOT NULL,
@@ -40,7 +37,7 @@ CREATE TABLE "Employees" (
      )
 );
 
-DROP TABLE Salaries
+
 
 CREATE TABLE "Salaries" (
     "emp_no" VARCHAR   NOT NULL,
@@ -50,7 +47,7 @@ CREATE TABLE "Salaries" (
      )
 );
 
-DROP TABLE Titles
+
 
 CREATE TABLE "Titles" (
     "title_id" VARCHAR   NOT NULL,
